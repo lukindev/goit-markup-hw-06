@@ -59,8 +59,7 @@ body {
 
 /* -----------------------HEADER--------------------------- */
 .header {
-  padding-top: 24px;
-  padding-bottom: 28px;
+ 
   border-bottom: 1px solid #e7e9fc;
   max-width: 1140px;
   margin: auto;
@@ -74,6 +73,8 @@ body {
 }
 .container-header {
   display: flex;
+   padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-general {
   display: flex;
@@ -109,6 +110,7 @@ body {
 }
 
 .header-navigation-name {
+  padding-bottom: 28px;
   color: var(--navigation-color);
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -125,7 +127,7 @@ body {
 width: 100%;
 height: 4px;
 left: 0px;
-top: 46px;
+bottom: 0;
 background: var(--hover-color);
 border-radius: 2px;
 
@@ -198,8 +200,7 @@ border-radius: 2px;
 .hero-button:focus {
   background: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
+
 }
 .hero-button-orderservice {
   font-family: inherit;
@@ -393,6 +394,8 @@ border-radius: 2px;
   color: var(--company);
   border: 1px solid var(--company);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+ 
 }
 
 .cast-link:is(:hover, :focus) {
@@ -401,11 +404,12 @@ border-radius: 2px;
 }
 .cast-soc-icon {
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 .cast-link:is(:hover, :focus) .cast-soc-icon {
   fill: currentColor;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 /* -----------------------------FOOTER------------------------ */
@@ -413,11 +417,15 @@ border-radius: 2px;
   background: var(--navigation-color);
   padding-top: 100px;
   padding-bottom: 100px;
-  display: flex;
+}
+.footer-container{
+  display: flex ;
+  flex-wrap: wrap;
+  gap: 120px;
+  margin: auto;
 }
 .logo-container {
-  margin-left: 156px;
-  margin-right: 120px;
+
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -509,7 +517,7 @@ border-radius: 2px;
   background: var(--footer-logo-studio-color);
   padding: 12px 24px;
   border: 1px solid var(--footer-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-btn:hover,
 .filters-btn:focus {
@@ -637,6 +645,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
   top: 10px;
   right: 10px;
  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ cursor: pointer;
 }
 
 .btn-modal-close:is(:hover, :focus) {
