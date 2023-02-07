@@ -830,8 +830,7 @@ height: 56px;
   border: 0;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:is(:hover, :focus) {
   background: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
