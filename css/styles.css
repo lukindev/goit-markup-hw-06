@@ -805,6 +805,10 @@ body {
 .privacy {
   color: var(--logo-color);
   margin-left: 5px;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.privacy:is(:hover, :focus) {
+  color: var(--hover-color);
 }
 .modal-btn {
   background: var(--logo-color);
