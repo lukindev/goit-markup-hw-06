@@ -381,6 +381,21 @@
             </ul>
 
       </div>
+      <div class="subscribe">
+        <p class="subscribe-name">Subscribe</p>
+        <form  class="footer-form" name="signup_form" autocomplete="on" novalidate>
+  <label>
+    <input class="footer-email" type="email" name="email" placeholder="E-mail" />
+  </label>
+
+  <button class="subscribe-btn" type="submit">Subscribe
+    <svg class="subscribe-icon" width="24px" height="20px">
+                  <use href="./images/icons.svg#send">
+                  </use>
+                </svg>
+  </button>
+</form>
+      </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -390,6 +405,70 @@
                   <use href="./images/icons.svg#close"> </use>
                 </svg>
         </button>
+        
+
+<form>
+  <p class="form-name">Leave your contacts and we will call you back</p>
+  <div class="modal-container">
+  <label class="form-container" for="user-name">
+    Name
+  </label>
+  <div class="input-wrap">
+  <input class="modal-input" type="text" name="Name" placeholder=""  id="user-name">
+<svg class="modal-input-icon" width="18px" height="24px">
+  <use href="./images/icons.svg#icon-person"></use>
+</svg> 
+</div>
+</div>
+  <div class="modal-container">
+    <label class="form-container" for="user-tel">
+      Phone
+    </label>
+    <div class="input-wrap">
+    <input class="modal-input" type="tel" name="Phone" placeholder="" id="user-tel">
+  <svg class="modal-input-icon" width="18px" height="24px">
+  <use href="./images/icons.svg#icon-phone"></use>
+</svg>
+    </div>
+  </div>
+    <div class="modal-container
+">
+    <label class="form-container" for="user-email">
+      Email
+    </label>
+    <div class="input-wrap">
+    <input class="modal-input" type="email" name="email" placeholder="" id="user-email">
+   <svg class="modal-input-icon" width="18px" height="24px">
+  <use href="./images/icons.svg#icon-email-black"></use>
+</svg>  
+  </div>
+    </div>
+    <div class="modal-container
+">
+    <label class="form-container" for="user-comment">
+      Comment
+    </label>
+    <div class="input-wrap">
+    <textarea class="modal-textarea" name="Comment" rows="10" placeholder="Text input" id="user-comment"></textarea>
+    </div>
+    </div>
+    <div class="modal-container
+">
+    <label class="form-container" for="checkbox">
+    </label>
+    
+    <div class="modal-check">
+    <input class="modal-policy visually-hidden" type="checkbox" name="Policy" id="Policy" value="true" required />
+    
+    <label for="Policy" class="policy-text">I accept the terms and conditions of the <a href="" class="privacy">Privacy Policy</a></label>
+  </div>
+    </div>
+    <div class="container" >
+    <button class="modal-btn modal-btn-send" type="submit">Send</button>
+    </div>
+</form>
+
+
       </div>
     </div>
     <script src="./js/modal.js"></script>
